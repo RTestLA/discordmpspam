@@ -1,0 +1,85 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Fond gris clair */
+    color: #333; /* Texte sombre */
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* Fond blanc */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.title {
+    text-align: center;
+}
+
+.discord-logo {
+    width: 80px; /* Taille de l'image Discord */
+    height: auto;
+    margin-bottom: 10px; /* Espace sous l'image */
+}
+
+.title h1 {
+    color: #7289da; /* Bleu Discord */
+    font-size: 45px; /* Taille du titre agrandie */
+}
+
+#red {
+    color: #7289da; /* Rouge Discord */
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #8e9297; /* Texte gris Discord */
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 20px);
+    max-width: 360px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e3e5e8; /* Bordure gris clair */
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+    border-color: #7289da; /* Bordure bleu Discord */
+}
+
+form input[type="submit"] {
+    background-color: #7289da; /* Bouton bleu Discord */
+    color: #fff; /* Texte blanc */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #677bc4; /* Bouton bleu foncé Discord au survol */
+}
+.contact-us {
+    text-align: center;
+}
